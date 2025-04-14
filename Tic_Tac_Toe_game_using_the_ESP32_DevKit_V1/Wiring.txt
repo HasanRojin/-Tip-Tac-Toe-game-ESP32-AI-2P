@@ -1,0 +1,33 @@
+
+ ✅ 1.8" TFT Display (ST7735, 128x160 v1.1) Pin Wiring
+
+| TFT Pin  | Connect to ESP32 |
+|----------|------------------|
+|  VCC     | 3.3V             |
+|  GND     | GND              |
+|  CS      | GPIO 5           |
+|  RESET   | GPIO 4           |
+|  AO      | GPIO 2           |
+|  SDA     | GPIO 23 (MOSI)   |
+|  SCK     | GPIO 18 (SCK)    |
+|  LED     | 3.3V (or via 100Ω resistor to 3.3V) |
+
+📌 Note: Some modules may label `AO` as `DC` or `RS`.
+
+---
+
+ ✅ Push Button Wiring (5 Buttons: UP, DOWN, LEFT, RIGHT, SELECT)
+
+Each button should be:
+- One side connected to GND
+- Other side connected to ESP32 GPIO pin (with `INPUT_PULLUP` in code)
+
+| Button   | ESP32 GPIO |
+|----------|------------|
+| UP       | GPIO 13    |
+| DOWN     | GPIO 12    |
+| LEFT     | GPIO 14    |
+| RIGHT    | GPIO 27    |
+| SELECT   | GPIO 26    |
+
+📌 Optional: You can add a 0.1µF capacitor across each button for debounce.
