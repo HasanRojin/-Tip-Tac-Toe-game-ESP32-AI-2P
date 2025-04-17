@@ -31,3 +31,4 @@ Each button should be:
 | SELECT   | GPIO 26    |
 
 📌 Optional: You can add a 0.1µF capacitor across each button for debounce.
+ Wokiwi Project: https://wokwi.com/projects/428517795721302017
